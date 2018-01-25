@@ -14,6 +14,10 @@ https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/master/Windows/ASWinVirtu
 
 Run ASWinVirtualDrive.exe
 
+#### Run
+
+Run AlgoSeekDrive icon from Desktop, or from AlgoSeek folder in the Start Menu
+
 ## For Linux
 
 (TODO: list of supported distro's)
@@ -28,6 +32,10 @@ wget https://raw.githubusercontent.com/aquanyc/AlgoSeekWinDriveRelease/master/ot
 sudo chmod +x linux_installer.sh
 
 sudo ./linux_installer.sh
+
+#### Run
+
+sudo python -m ASDriveApp
 
 ## For Mac OS X 
 
