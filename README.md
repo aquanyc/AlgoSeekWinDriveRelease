@@ -59,7 +59,7 @@ mkdir -p algoseek
 
 cd algoseek
 
-sudo python -m ASDriveApp.__main__
+sudo python -m ASDriveApp.\_\_main\_\_
 
 ## For Mac OS X 
 
