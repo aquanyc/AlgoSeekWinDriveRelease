@@ -21,7 +21,7 @@ Run ASWinVirtualDrive.exe
 
 #### Download
 
-wget https://raw.githubusercontent.com/aquanyc/AlgoSeekWinDriveRelease/test/other/linux_installer.sh
+wget https://raw.githubusercontent.com/aquanyc/AlgoSeekWinDriveRelease/master/other/linux_installer.sh
 
 #### Install
 
