@@ -2,7 +2,7 @@
 
 (TODO: Some brief marketing text here)
 
-## Windows
+## For Windows
 
 (TODO: list of Windows versions + requirements)
 
@@ -14,7 +14,7 @@ https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/master/Windows/ASWinVirtu
 
 Run ASWinVirtualDrive.exe
 
-## Linux
+## For Linux
 
 (TODO: list of supported distro's)
 (early dev version release:)
@@ -28,3 +28,7 @@ wget https://raw.githubusercontent.com/aquanyc/AlgoSeekWinDriveRelease/test/othe
 chmod +x linux_installer.sh
 
 ./linux_installer.sh
+
+## For Mac OS X 
+
+TBD
