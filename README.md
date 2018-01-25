@@ -25,9 +25,9 @@ wget https://raw.githubusercontent.com/aquanyc/AlgoSeekWinDriveRelease/test/othe
 
 #### Install
 
-chmod +x linux_installer.sh
+sudo chmod +x linux_installer.sh
 
-./linux_installer.sh
+sudo ./linux_installer.sh
 
 ## For Mac OS X 
 
