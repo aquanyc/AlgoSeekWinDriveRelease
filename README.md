@@ -37,9 +37,15 @@ Requirement before install:
 
 sudo yum install fuse-devel
 
+##### RedHat\CentOS Linux 6+
+
+Install Python PIP, see https://www.liquidweb.com/kb/how-to-install-pip-on-centos-7/
+
+sudo yum install fuse-devel
+
 #### Download
 
-wget --no-check-certificate https://raw.githubusercontent.com/aquanyc/AlgoSeekWinDriveRelease/master/other/linux_installer.sh
+wget -q --no-check-certificate https://raw.githubusercontent.com/aquanyc/AlgoSeekWinDriveRelease/master/other/linux_installer.sh -O linux_installer.sh
 
 #### Install
 
@@ -49,7 +55,11 @@ sudo ./linux_installer.sh
 
 #### Run
 
-sudo python -m ASDriveApp
+mkdir -p algoseek
+
+cd algoseek
+
+sudo python -m ASDriveApp.__main__
 
 ## For Mac OS X 
 
