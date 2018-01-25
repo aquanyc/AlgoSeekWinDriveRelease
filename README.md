@@ -6,11 +6,11 @@
 
 (TODO: list of Windows versions + requirements)
 
-### Download
+#### Download
 
 https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/master/Windows/ASWinVirtualDrive.exe
 
-### Install
+#### Install
 
 Run ASWinVirtualDrive.exe
 
@@ -19,11 +19,11 @@ Run ASWinVirtualDrive.exe
 (TODO: list of supported distro's)
 (early dev version release:)
 
-### Download
+#### Download
 
 wget https://raw.githubusercontent.com/aquanyc/AlgoSeekWinDriveRelease/test/other/linux_installer.sh
 
-### Install
+#### Install
 
 chmod +x linux_installer.sh
 
