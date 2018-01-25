@@ -30,7 +30,7 @@ branch=${1:-master}
 
 echo Installing Python Modules
 echo =============================
-wget --backups=1 https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/$branch/other/fusepy.zip
-wget --backups=1 https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/$branch/other/ASPythonVirtualDrive.zip
-wget --backups=1 https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/$branch/other/ASWinVirtualDrive.zip
+wget --no-check-certificate --backups=1 https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/$branch/other/fusepy.zip
+wget --no-check-certificate --backups=1 https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/$branch/other/ASPythonVirtualDrive.zip
+wget --no-check-certificate --backups=1 https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/$branch/other/ASWinVirtualDrive.zip
 pip install --no-cache-dir -U -I fusepy.zip ASPythonVirtualDrive.zip ASWinVirtualDrive.zip

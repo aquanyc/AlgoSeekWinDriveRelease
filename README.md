@@ -23,9 +23,23 @@ Run AlgoSeekDrive icon from Desktop, or from AlgoSeek folder in the Start Menu
 (TODO: list of supported distro's)
 (early dev version release:)
 
+#### Distros and Prerequisites
+
+##### Ubuntu 14+
+
+Requirement before install:
+
+sudo apt-get install libfuse-dev
+
+##### Amazon Linux 2017+
+
+Requirement before install:
+
+sudo yum install fuse-devel
+
 #### Download
 
-wget https://raw.githubusercontent.com/aquanyc/AlgoSeekWinDriveRelease/master/other/linux_installer.sh
+wget --no-check-certificate https://raw.githubusercontent.com/aquanyc/AlgoSeekWinDriveRelease/master/other/linux_installer.sh
 
 #### Install
 
