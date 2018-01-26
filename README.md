@@ -55,11 +55,17 @@ sudo ./linux_installer.sh
 
 #### Run
 
-mkdir -p algoseek
-
-cd algoseek
+cd ~/AlgoSeek
 
 sudo python -m ASDriveApp.\_\_main\_\_
+
+#### Stop
+
+sudo python -m ASDriveApp.action disconnect
+
+#### More options
+
+sudo python -m ASDriveApp.action 
 
 ## For Mac OS X 
 
