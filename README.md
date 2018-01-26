@@ -18,6 +18,10 @@ Run ASWinVirtualDrive.exe
 
 Run AlgoSeekDrive icon from Desktop, or from AlgoSeek folder in the Start Menu
 
+#### Notes:
+
+For notes and step-by-step install instructions, see https://github.com/aquanyc/AlgoSeekWinDriveRelease/blob/master/NOTES.md
+
 ## For Linux
 
 (TODO: list of supported distro's)
