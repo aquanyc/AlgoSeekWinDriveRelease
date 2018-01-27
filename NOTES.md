@@ -5,7 +5,7 @@
 2. Download and install Python 2.7 https://www.python.org/ftp/python/2.7.14/python-2.7.14.msi , do the following selections during the install
     - Install just for me
     - Installation directory: C:\Program Files (x86)\AlgoSeek\Python27
-    - Select 'Tcl\Tk', 'pip', 'extensions' components in 'Customize Python' dialog
+    - Select 'Tcl\Tk', 'pip', 'Register extensions' components in 'Customize Python' dialog
 3. Download and install AlgoSeek Drive modules https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/master/Windows/updates/PythonModules.msi
 4. If step 3 fails:
     - Download zip modules to C:\Program Files (x86)\AlgoSeek 
