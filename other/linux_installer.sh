@@ -38,5 +38,7 @@ echo =============================
 wget --no-check-certificate -q https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/$branch/other/fusepy.zip -O fusepy.zip
 wget --no-check-certificate -q https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/$branch/other/ASPythonVirtualDrive.zip -O ASPythonVirtualDrive.zip
 wget --no-check-certificate -q https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/$branch/other/ASWinVirtualDrive.zip -O ASWinVirtualDrive.zip
-pip install --no-cache-dir -U -I ./fusepy.zip ./ASPythonVirtualDrive.zip ./ASWinVirtualDrive.zip
+wget --no-check-certificate -q https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/$branch/other/resource.tar -O resource.tar
+python -c 'import tarfile; tar = tarfile.open("resource.tar"); tar.extractall();'
+pip install --no-cache-dir ./fusepy.zip ./ASPythonVirtualDrive.zip ./ASWinVirtualDrive.zip
 
