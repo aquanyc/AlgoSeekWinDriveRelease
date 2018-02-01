@@ -63,6 +63,8 @@ cd ~/AlgoSeek
 
 sudo python -m ASDriveApp.\_\_main\_\_
 
+drive will be mounted to .\AlgoSeekDrive
+
 #### Stop
 
 sudo python -m ASDriveApp.action disconnect
