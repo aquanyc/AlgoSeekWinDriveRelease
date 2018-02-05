@@ -1,11 +1,46 @@
+# AlgoSeek Drive configuration guide
+
+## AlgoSeek Key file
+
+AlgoSeek drive stores csv data inside AWS S3 storage. 
+
+Whenever a csv file is downloaded or opened a request is forwarded to AWS storage.
+
+AWS requires a key pair to access AWS S3 resources and download data.
+
+These keys are normally requested by AlgoSeek from AWS and then delivered to a AlgoSeek drive user via key.cfg file.
+
+AlgoSeek drive stores these keys in key.cfg file.
+
+### key.cfg file structure
+
+key.cfg file has the following structure
+
+[AlgoSeek]
+aws_access=\<AWS_ACCESS_KEY\>
+aws_secret=\<AWS_SECRET_KEY\>
+
+e.g.
+
+[AlgoSeek]
+aws_access=AKIAXXXXXXXXXXXXXXXXXX
+aws_secret=yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+
+key.cfg file is read on every mount (connect) of AlgoSeek drive.
+Whenever key.cfg is changed, AlgoSeek Drive should be restarted in order changes to take place.
+
 ## AlgoSeek Drive options file
 
-All options governing AlgoSeek virtual drive are stored in config file 'algoseek.ini'
+Options governing AlgoSeek virtual drive are stored in config file 'algoseek.ini'
 
 ### algoseek.ini file structure
 
 algoseek.ini file is INI file ( see https://en.wikipedia.org/wiki/INI_file for more info)
+
 INI file consists of sections, and key=value pairs inside a section.
+
+algoseek.ini file is read on every mount (connect) of AlgoSeek drive. 
+Whenever algoseek.ini is changed, AlgoSeek Drive should be restarted in order changes to take place.
 
 ### AlgoSeek section
 
