@@ -4,7 +4,10 @@
 
 ## For Windows
 
-(TODO: list of Windows versions + requirements)
+Supported Windows desktop versions: Windows 7 SP 1 and above
+
+Supported Windows server versions: Windows 2008 R2 SP 1 and above
+
 
 #### Download
 
