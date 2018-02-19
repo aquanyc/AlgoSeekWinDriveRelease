@@ -19,5 +19,7 @@
 
 ## Known Issues
 1. Windows requires WinFSP to be signed.
+
 Reason: a security update is missing. 
+
 Solution: Download and install a patch for your system from https://docs.microsoft.com/en-us/security-updates/SecurityAdvisories/2015/3033929
