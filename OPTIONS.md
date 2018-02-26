@@ -16,14 +16,18 @@ AlgoSeek drive stores these keys in key.cfg file.
 
 key.cfg file has the following structure
 
-[AlgoSeek]
+\[AlgoSeek\]
+
 aws_access=\<AWS_ACCESS_KEY\>
+
 aws_secret=\<AWS_SECRET_KEY\>
 
 e.g.
 
-[AlgoSeek]
+\[AlgoSeek\]
+
 aws_access=AKIAXXXXXXXXXXXXXXXXXX
+
 aws_secret=yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
 
 key.cfg file is read on every mount (connect) of AlgoSeek drive.
