@@ -43,6 +43,8 @@ algoseek.ini file is INI file ( see https://en.wikipedia.org/wiki/INI_file for m
 
 INI file consists of sections, and key=value pairs inside a section.
 
+Note: option names are case-insensitive.
+
 algoseek.ini file is read on every mount (connect) of AlgoSeek drive. 
 Whenever algoseek.ini is changed, AlgoSeek Drive should be restarted in order changes to take place.
 
