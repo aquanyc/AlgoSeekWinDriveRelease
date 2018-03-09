@@ -107,7 +107,9 @@ Default: 3
 ## AlgoSeek Key file (key.cfg) example 
 
 \[AlgoSeek\]
+
 aws_access=AKIAXXXXXXXXXXXXZZZZ
+
 aws_secret=XXTZP0raXoe/AHsxuxFQP0v8mgaN5eiWjl+dce7I
 
 ## AlgoSeek Drive options file (algoseek.ini) example
