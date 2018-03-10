@@ -1,5 +1,7 @@
 # AlgoSeek Drive configuration guide
 
+The document describes AlgoSeek configuration files. Full examples of configuration files are available in "Appendix" section
+
 ## AlgoSeek Key file
 
 AlgoSeek drive stores csv data inside AWS S3 storage. 
@@ -99,3 +101,43 @@ Default: 20
 The max size of the log in MB. Log is truncated after the size is reached.
 
 Default: 3
+
+# Appendix
+
+## AlgoSeek Key file (key.cfg) example 
+
+\[AlgoSeek\]
+
+aws_access=AKIAXXXXXXXXXXXXZZZZ
+
+aws_secret=XXTZP0raXoe/AHsxuxFQP0v8mgaN5eiWjl+dce7I
+
+## AlgoSeek Drive options file (algoseek.ini) example
+
+\[AlgoSeek\]
+
+#local path to json file with folder structure
+
+folders=default.json
+
+#sets up mountpoint
+
+mountpoint=Z: 
+
+#uncompression=on/off - turns uncompression of .gz cloud files on the fly on or off
+
+uncompression=on
+
+#cache_update_sec - sets how often cache is autoupdated. set to 0 to turn cache autoupdate off
+
+cache_update_sec = 3000
+
+\[logging\]
+
+#Logging level: 10 = 'debug level', 20 = 'info level'
+
+level=20 
+
+#sets the maximum size of a log file in MB
+
+max_size_mb = 3 
