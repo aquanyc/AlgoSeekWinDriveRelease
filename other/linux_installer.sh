@@ -41,4 +41,8 @@ wget --no-check-certificate -q https://github.com/aquanyc/AlgoSeekWinDriveReleas
 wget --no-check-certificate -q https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/$branch/other/resource.tar -O resource.tar
 python -c 'import tarfile; tar = tarfile.open("resource.tar"); tar.extractall();'
 pip install --no-cache-dir ./fusepy.zip ./ASPythonVirtualDrive.zip ./ASWinVirtualDrive.zip
-
+echo ============================
+echo Installation Complete
+echo To run the software type
+echo "cd ~/AlgoSeek && sudo python -m ASDriveApp.__main__"
+echo "LEGAL NOTE: By running the software you accept End User License Agreement (EULA). To read EULA open ~/AlgoSeek/AlgoSeekEULA.rtf"
