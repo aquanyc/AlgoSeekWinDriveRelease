@@ -1,6 +1,4 @@
-# AlgoSeek Virtual Drive
-
-(TODO: Some brief marketing text here)
+# AlgoSeek Data Drive
 
 ## For Windows
 
@@ -19,7 +17,7 @@ Run ASWinVirtualDrive.exe
 
 #### Run
 
-Run AlgoSeekDrive icon from Desktop, or from AlgoSeek folder in the Start Menu
+Run AlgoSeek Data Drive icon from Desktop, or from AlgoSeek folder in the Start Menu
 
 #### Notes:
 

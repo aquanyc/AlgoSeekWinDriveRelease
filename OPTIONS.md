@@ -1,4 +1,4 @@
-# AlgoSeek Drive configuration guide
+# AlgoSeek Data Drive configuration guide
 
 The document describes AlgoSeek configuration files. Full examples of configuration files are available in "Appendix" section
 
@@ -37,7 +37,7 @@ Whenever key.cfg is changed, AlgoSeek Drive should be restarted in order changes
 
 ## AlgoSeek Drive options file
 
-Options governing AlgoSeek virtual drive are stored in config file 'algoseek.ini'
+Options governing AlgoSeek Data Drive are stored in config file 'algoseek.ini'
 
 ### algoseek.ini file structure
 
