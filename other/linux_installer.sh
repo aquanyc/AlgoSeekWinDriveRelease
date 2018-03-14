@@ -8,7 +8,7 @@ fi
 #TODO: check FUSE installed
 
 echo =============================
-echo Installing AlgoSeek Drive
+echo Installing AlgoSeek Data Drive
 echo =============================
 echo Checking Python
 echo =============================
