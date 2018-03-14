@@ -36,6 +36,7 @@ For notes and step-by-step install instructions, see https://github.com/aquanyc/
 
 Requirement before install:
 
+sudo apt-get udpate
 sudo apt-get install libfuse-dev
 
 ##### Amazon Linux 2017+
