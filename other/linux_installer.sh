@@ -6,25 +6,16 @@ fi
 
 
 #TODO: check FUSE installed
+#TODO: check untar available
 
-echo =============================
-echo Installing AlgoSeek Data Drive
-echo =============================
-echo Checking Python
-echo =============================
-
-
-ret=`python -c 'import sys; print ("%i" % int(sys.hexversion > 0x02060000));'`
-if [ $ret -eq 0 ]; then
-   echo "Error: Python version 2.6 or higher is required."
-   exit 1
+#get bitness
+bitness="32"
+MACHINE_TYPE=`uname -m`
+if [ ${MACHINE_TYPE} == 'x86_64' ]; then
+  bitness="64"
 fi
 
-echo Updating Python PIP
-echo =============================
-wget --no-check-certificate https://bootstrap.pypa.io/ez_setup.py -nv -O - | python 2>&1 &>> install.log
-easy_install pip &>> install.log
-pip install -U pip
+
 
 branch=${1:-master}
 
@@ -35,14 +26,14 @@ cd ~/AlgoSeek
 
 echo Installing Python Modules
 echo =============================
-wget --no-check-certificate -q https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/$branch/other/fusepy.zip -O fusepy.zip
-wget --no-check-certificate -q https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/$branch/other/ASPythonVirtualDrive.zip -O ASPythonVirtualDrive.zip
-wget --no-check-certificate -q https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/$branch/other/ASWinVirtualDrive.zip -O ASWinVirtualDrive.zip
 wget --no-check-certificate -q https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/$branch/other/resource.tar -O resource.tar
-python -c 'import tarfile; tar = tarfile.open("resource.tar"); tar.extractall();'
-pip install --no-cache-dir ./fusepy.zip ./ASPythonVirtualDrive.zip ./ASWinVirtualDrive.zip
+wget --no-check-certificate -q https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/$branch/other/Linux/$bitness/ASDriveApp -O ASDriveApp
+wget --no-check-certificate -q https://github.com/aquanyc/AlgoSeekWinDriveRelease/raw/$branch/other/Linux/$bitness/ASVirtualDrive -O ASVirtualDrive
+#TODO: check errors
+#untar without superseding old .ini file
+tar xvkf resource.tar -C .
 echo ============================
 echo Installation Complete
 echo To run the software type
-echo "cd ~/AlgoSeek && sudo python -m ASDriveApp.__main__"
+echo "cd ~/AlgoSeek && sudo ASDriveApp"
 echo "LEGAL NOTE: By running the software you accept End User License Agreement (EULA). To read EULA open ~/AlgoSeek/AlgoSeekEULA.rtf"
